@@ -1,3 +1,3 @@
-module guts/be_api
+module github.com/milennik/guts
 
 go 1.17
