@@ -1,4 +1,4 @@
-package main
+package beapi
 
 import (
 	"fmt"
@@ -18,4 +18,8 @@ func handleRequests() {
 
 func main() {
 	handleRequests()
+}
+
+func Add(x, y int) (res int) {
+	return x + y
 }
