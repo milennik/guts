@@ -1,4 +1,4 @@
-package beapi
+package main
 
 import (
 	"fmt"
