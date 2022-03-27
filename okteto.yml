@@ -28,7 +28,7 @@ deploy:
 # The dev section defines how to activate a development container
 # More info: https://www.okteto.com/docs/reference/manifest/#dev
 dev:
-  my-be-api:
+  be-api:
     context: https://cloud.okteto.com
     namespace: milennik
     image: okteto/golang:1
