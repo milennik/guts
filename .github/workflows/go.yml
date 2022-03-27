@@ -56,7 +56,7 @@ jobs:
     - name: "Trigger the pipeline"
       uses: okteto/pipeline@latest
       with:
-        name: ${{ github.event.number }}
+        name: okteto1
         timeout: 8m
         skipIfExists: true
         filename: okteto.yml
