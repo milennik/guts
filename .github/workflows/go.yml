@@ -59,3 +59,4 @@ jobs:
         name: ${{ github.event.number }}
         timeout: 8m
         skipIfExists: true
+        filename: okteto.yml
