@@ -1,11 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-be-api
+  name: be-api
   labels:
-    app: my-be-api
-  annotations:
-    dev.okteto.com/auto-ingress: "true"    
+    app: be-api  
 spec:
   replicas: 1
   selector:
@@ -25,3 +23,19 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 5000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: be-api
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "be-api"
+    port: 5000
+  selector:
+    app: be-api
