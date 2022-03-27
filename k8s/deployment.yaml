@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: be-api-container
-        image: guts2501/be_api
+        image: okteto.dev/guts-guts:okteto
         resources:
           limits:
             memory: "128Mi"
