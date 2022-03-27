@@ -37,7 +37,7 @@ jobs:
         uses: golangci/golangci-lint-action@v2
         with:
           version: latest
-  devflow:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
