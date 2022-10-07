@@ -1,2 +1,2 @@
 # guts
-Guts
+GUTS

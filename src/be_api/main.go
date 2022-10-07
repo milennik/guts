@@ -7,7 +7,10 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Welcome to Okteto!")
+	_, err := fmt.Fprint(w, "Welcome to Okteto!")
+	if err != nil {
+		return
+	}
 	fmt.Println("Endpoint Hit: homePage")
 }
 
